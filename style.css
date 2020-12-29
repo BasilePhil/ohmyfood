@@ -1,4 +1,9 @@
-p
+#logo 
 {
-	font-size: 1em;
+	width: 100%;
+}
+
+#logo img
+{
+	justify-content: center;
 }
