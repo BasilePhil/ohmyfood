@@ -1,3 +1,8 @@
+p ,article
+{
+	font-family: 'Roboto', sans-serif;
+}
+
 #logo 
 {
 	width: 100%;
@@ -7,3 +12,49 @@
 {
 	justify-content: center;
 }
+
+#fd
+{
+	width: 100%;
+}
+
+#fd img
+{
+	width: 100%;
+}
+
+section
+{
+	background-color: #F2F2F2;
+	border-radius: 30px 30px 0px 0px;
+
+}
+
+h2
+{
+	border-bottom: solid #99E2D0 4px;
+	width: 10%;	
+}
+
+section div 
+{
+	background-color: #fff;
+	border-radius: 20px;
+	display: flex;
+	margin: 10px;
+}
+
+
+
+
+
+
+
+
+footer
+{
+	background-color: black;
+	color: #fff;
+
+}
+
