@@ -9,8 +9,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
         <title>Le délice des sens</title>
         <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/098e3b7b1c.js" crossorigin="anonymous"></script>        
 
     </head>
 
@@ -18,95 +21,117 @@
         <!-- Corps de la page -->
         <header>
 
-            <p id="logo"><img src="photos/ohmyfood.png" alt="logo"></p>
+            <p id="logo"><i class="fas fa-arrow-left"></i><img src="photos/ohmyfood2.svg" alt="logo"></p>
 
-            <p id="fd"><img src="photos/fd/ds.jpg"></p> <!--image "fond d'écran" du restau-->
+            <figure id="fd"><img src="photos/fd/ds.jpg"></figure> <!--image "fond d'écran" du restau-->
 
         </header>
 
         <section>
 
-            <h1>Le délice des sens</h1>
+            <h1>Le délice des sens<i class="far fa-heart"></i><i class="fas fa-heart"></i></h1>
 
-            <h2>Entrées</h2><!--entrées, le passages h2 et 3 div on été multiplié 2 autres fois-->
+            <div class="entrees">
+
+                <h2>ENTRÉES</h2><!--entrées, le passages h2 et 3 div on été multiplié 2 autres fois-->
             
-            <div>
+                <article>
 
-                <p>Tartare de thon<scan>Assaisonné au yuzu</scan></p>
-                <article>25€</article>
+                    <p>Tartare de thon<scan>Assaisonné au yuzu</scan></p>
+                    <div class="prix">25€</div>
+                    <div class="ok"><i class="fas fa-check-circle"></i></div>
 
-            </div>
+                </article>
 
-            <div>
+                <article>
                 
-                <p>Bouchée de homard croustillant<scan>Et sa farandole de petits légumes</scan></p>
-                <article>35€</article>
+                    <p>Bouchée de homard croustillant<scan>Et sa farandole de petits légumes</scan></p>
+                    <div class="prix">35€</div>
+                    <div class="ok"><i class="fas fa-check-circle"></i></div>
 
-            </div>
+                </article>
 
-            <div>
+                <article>
 
-                <p>Velouté de cèpes<scan>Aux truffes</scan></p>
-                <article>20€</article>                
+                    <p>Velouté de cèpes<scan>Aux truffes</scan></p>
+                    <div class="prix">20€</div>
+                    <div class="ok"><i class="fas fa-check-circle"></i></div>                
                 
+                </article>
+
             </div>
 
-            <h2>Plats</h2><!--Plats-->
+            <div class="plats">
+
+                <h2>PLATS</h2><!--Plats-->
             
-            <div>
+                <article>
 
-                <p>Poulet rôti aux herbes de Provence<scan>Et sa crème de truffe</scan></p>
-                <article>40€</article>
+                    <p>Poulet rôti aux herbes de Provence<scan>Et sa crème de truffe</scan></p>
+                    <div class="prix">40€</div>
+                    <div class="ok"><i class="fas fa-check-circle"></i></div>
 
-            </div>
+                </article>
 
-            <div>
+                <article>
                 
-                <p>Langouste rôtie<scan>Et ses légumes de saison</scan></p>
-                <article>35€</article>
+                    <p>Langouste rôtie<scan>Et ses légumes de saison</scan></p>
+                    <div class="prix">35€</div>
+                    <div class="ok"><i class="fas fa-check-circle"></i></div>
+
+                </article>
+
+                <article>
+
+                    <p>Côte de boeuf Angus<scan>Et sa purée de panais</scan></p>
+                    <div class="prix">44€</div>
+                    <div class="ok"><i class="fas fa-check-circle"></i></div>
+
+                </article>
 
             </div>
 
-            <div>
+            <div class="desserts">
 
-                <p>Côte de boeuf Angus<scan>Et sa purée de panais</scan></p>
-                <article>44€</article>
-            </div>
-
-            <h2>Desserts</h2><!--Desserts-->
+                <h2>DESSERTS</h2><!--Desserts-->
             
-            <div>
+                <article>
 
-                <p>Farandole de desserts<scan>Du chef</scan></p>
-                <article>18€</article>
+                    <p>Farandole de desserts<scan>Du chef</scan></p>
+                    <div class="prix">18€</div>
+                    <div class="ok"><i class="fas fa-check-circle"></i></div>
 
-            </div>
+                </article>
 
-            <div>
+                <article>
                 
-                <p>Crème brulée<scan>Revisitée</scan></p>
-                <article>22€</article>
+                    <p>Crème brulée<scan>Revisitée</scan></p>
+                    <div class="prix">22€</div>
+                    <div class="ok"><i class="fas fa-check-circle"></i></div>
+
+                </article>
+
+                <article>
+
+                    <p>Tiramisu<scan>À la noisette</scan></p>
+                    <div class="prix">23€</div>
+                    <div class="ok"><i class="fas fa-check-circle"></i></div>
+
+                </article>
 
             </div>
 
-            <div>
-
-                <p>Tiramisu<scan>À la noisette</scan></p>
-                <article>23€</article>
-
-            </div>
-
-            <p>Commander</p> 
+            <p class="bt">Commander</p> 
 
         </section>
 
         <footer>
 
-            <h3><img src="" alt="logo site"></h3>
+            <h3><img src="photos/ohmyfood2.svg" alt="logo site"></h3>
 
-            <p><img src="" alt="logo couverts">Proposer un restaurant</p>
+            <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
 
-            <p><img src="" alt="logo mains serres">Devenir partenaire</p>
+            <p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
 
             <p>Mentions légales</p>
 
