@@ -15,6 +15,36 @@ body
 	margin-left: 20px;
 }
 
+.gris
+{
+	background: rgb(246, 246, 246);
+}
+
+.violet
+{
+	color: rgb(169, 93, 220);
+}
+
+.rose
+{
+	color: rgb(227, 112, 218);
+}
+
+.noir
+{
+	background: rgb(53, 53, 53);
+}
+
+.gras
+{
+	font-weight: bold
+}
+
+.regulier
+{
+	font-weight: normal;
+}
+
 /*fin des classes*/
 
 /*spéciation*/
@@ -25,18 +55,40 @@ article, article div
 	justify-content: space-between;	
 }
 
+h2, article p
+{
+	font-size: 1em;
+}
 
-/*fin spéciation*/
+section article p span, footer p, div.prix
+{
+	font-size: 0.95em;
+}
+
+section article p, div.prix
+{
+	font-weight: bold
+}
+
+h1, footer h3, h2, section article p span 
+
+{
+	font-weight: normal;
+}
 
 p ,article ,h2
 {
 	font-family: 'Roboto', sans-serif;
 }
 
-h1
+h1, footer h3
 {
 	font-family: 'Shrikhand', cursive;	
 }
+
+/*fin spéciation*/
+
+/* début de la page */
 
 header div
 {
@@ -64,7 +116,7 @@ figure
 
 section#grandmenu
 {
-	background-color: #F2F2F2;
+	background-color: rgb(246, 246, 246);
 	border-radius: 30px 30px 0px 0px;
 	margin-top: -74px;
 	position: relative;
@@ -78,7 +130,7 @@ section div
 h1
 {
 	padding-top: 30px;
-	font-weight: 500;
+	font-size: 1.6em;
 }
 
 h1 i
@@ -100,10 +152,8 @@ h2
 {
 	border-bottom: solid #99E2D0 3px;
 	width: 40px;
-	font-size: 1em;
 	padding-bottom: 5px;
 	padding-top: 10px;
-	font-weight: normal;
 }
 
 article
@@ -111,17 +161,34 @@ article
 	background-color: #fff;
 	border-radius: 15px;
 	margin: 15px;
-}
-
-article div
-{
-
+	padding: 10px;
+	max-height: 43px;
 }
 
 section article p 
 {
-	display:flex;
-	flex-direction:column
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+	width: 400px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	z-index: 1;	
+}
+
+section article p span
+{
+	margin-top: 5px;
+	width: 400px;
+	overflow: hidden;
+	text-overflow: ellipsis;		
+}
+
+div.prix
+{
+	margin-right: 10px;
+	padding-top: 25px;
+	z-index: 2;
 }
 
 aside
@@ -131,7 +198,23 @@ aside
 
 footer
 {
-	background-color: black;
+	background-color: rgb(53, 53, 53);
 	color: #fff;
+	padding: 10px 20px 20px 20px;
 }
 
+footer h3
+{
+
+}
+
+footer p
+{
+	margin: 0px 0px 10px 0px;
+}
+
+footer i
+{
+	margin-right: 7px;
+	width: 19px;
+}
