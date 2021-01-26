@@ -49,34 +49,28 @@ body
 
 /*spéciation*/
 
-article, article div
-{
-	display: flex;
-	justify-content: space-between;	
-}
-
-h2, article p
+h2, article h4
 {
 	font-size: 1em;
 }
 
-section article p span, footer p, div.prix
+section article p , footer p, div.prix
 {
 	font-size: 0.95em;
 }
 
-section article p, div.prix
+section article h4, div.prix
 {
 	font-weight: bold
 }
 
-h1, footer h3, h2, section article p span 
+h1, footer h3, h2, section article p 
 
 {
 	font-weight: normal;
 }
 
-p ,article ,h2
+p ,article ,h2 ,h4
 {
 	font-family: 'Roboto', sans-serif;
 }
@@ -169,6 +163,68 @@ h2
 	padding-top: 10px;
 }
 
+/*début section article*/
+
+article
+{
+	background-color: #fff;
+	border-radius: 15px;
+	margin: 15px;
+	padding: 10px;
+	max-height: 43px;
+	box-shadow: 2px 2px 5px 2px #E8E8E8;	
+	display: flex;
+}
+
+article:hover, article:active
+{
+	display: flex;
+	background-color: #99E2D0;
+}
+
+article div.menuprix
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	min-width: 200px;
+}
+
+section article h4 
+{
+	margin: 0px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+section article p
+{
+	margin-top: 5px;
+	margin-bottom: 0px;
+	overflow: hidden;
+	text-overflow: ellipsis;	
+}
+
+div.prix
+{
+	margin-right: 10px;
+	padding-top: 25px;
+	width: 40px;
+}
+
+aside
+{
+	display: none;
+	background-color: #99E2D0;
+	color: #fff;
+	width: 40px;
+}
+
+aside i
+{
+	margin: auto;
+}
+/*
+
 article
 {
 	background-color: #fff;
@@ -179,21 +235,17 @@ article
 	box-shadow: 2px 2px 5px 2px #E8E8E8;	
 }
 
-section article p 
+section article h4 
 {
-	display: flex;
-	flex-direction: column;
 	margin: 0px;
-	width: 400px;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	z-index: 1;	
+	display: inline;
 }
 
-section article p span
+section article p
 {
-	margin-top: 5px;
-	width: 400px;
+	/*margin-top: 5px;*//*
 	overflow: hidden;
 	text-overflow: ellipsis;		
 }
@@ -202,13 +254,16 @@ div.prix
 {
 	margin-right: 10px;
 	padding-top: 25px;
-	z-index: 2;
 }
 
 aside
 {
 	display: none;
 }
+
+*/
+
+/*fin section article */
 
 div.apbt
 {

@@ -7,8 +7,13 @@
         
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>La note enchantée</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <title>Le délice des sens</title>
         <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/098e3b7b1c.js" crossorigin="anonymous"></script>        
 
     </head>
 
@@ -16,105 +21,183 @@
         <!-- Corps de la page -->
         <header>
 
-            <p id="logo"><img src="photos/ohmyfood.png" alt="logo"></p>
+            <div id="logo"><a href="ohmyfood.html"><i class="fas fa-arrow-left"></i></a><img src="photos/ohmyfood2.svg" alt="logo"></div>
 
-            <p id="fd"><img src="photos/fd/ds.jpg"></p> <!--image "fond d'écran" du restau-->
+            <figure id="fd"><img src="photos/fd/ds.jpg" alt="photo de plat" class="taille100"></figure> <!--image "fond d'écran" du restau-->
 
         </header>
 
-        <section>
+        <section id="grandmenu">
 
-            <h1>La note enchantée</h1>
+            <h1 class="margeg20">Le délice des sens<i class="far fa-heart coeurvide"></i><i class="fas fa-heart coeurplein"></i></h1>
 
-            <h2>Entrées</h2><!--entrées, le passages h2 et 3 div on été multiplié 2 autres fois-->
+            <div class="entrees">
+
+                <h2 class="margeg20">ENTRÉES</h2><!--entrées, le passages h2 et 3 div on été multiplié 2 autres fois-->
             
-            <div>
+                <article>
 
-                <p>Ravioles de foie gras<scan>Accompagnés de leur crème à la truffe</scan></p>
-                <article>25€</article>
+                    <div class="menuprix taille100">
+                        <h4>Ravioles de foie gras</h4>
+                        <p>Accompagnés de leur crème à la truffe</p>
+                    </div>
+                    
+                    <div class="prix">25€</div>
 
-            </div>
+                    <aside class="ok"><i class="fas fa-check-circle"></i></aside>
 
-            <div>
+                </article>
+
+                <article>
+
+                    <div class="menuprix taille100">
+                        <h4>Caviar osciètre</h4>
+                        <p>Sur blini à la farine de blé noir</p>
+                    </div>
+                    
+                    <div class="prix">35€</div>
+
+                    <aside class="ok"><i class="fas fa-check-circle"></i></aside>
+
+                </article>
+
+                <article>
+
+                    <div class="menuprix taille100">
+                        <h4>Homard et espuma de potiron</h4>
+                        <p>Mariné aux zestes d'orange</p>
+                    </div>
+                    
+                    <div class="prix">20€</div>
+
+                    <aside class="ok"><i class="fas fa-check-circle"></i></aside>                
                 
-                <p>Caviar osciètre<scan>Sur blini à la farine de blé noir</scan></p>
-                <article>35€</article>
+                </article>
 
-            </div>
+                <article>
 
-            <div>
+                    <div class="menuprix taille100">
+                        <h4>Foie gras de canard cuit entier</h4>
+                        <p>Confiture de figue et pain toasté</p>
+                    </div>
+                    
+                    <div class="prix">35€</div>
+
+                    <aside class="ok"><i class="fas fa-check-circle"></i></aside>                
                 
-                <p>Homard et espuma de potiron<scan>Mariné aux zestes d'orange</scan></p>
-                <article>20€</article>
+                </article>               
 
             </div>
 
-            <div>
+            <div class="plats">
 
-                <p>Foie gras de canard cuit entier<scan>Confiture de figue et pain toasté</scan></p>
-                <article>35€</article>                
-                
-            </div>
-
-            <h2>Plats</h2><!--Plats-->
+                <h2 class="margeg20">PLATS</h2><!--Plats-->
             
-            <div>
+                <article>
 
-                <p>Noix de coquilles Saint-Jacques<scan>Sur lit de purée de céleri-rave</scan></p>
-                <article>40€</article>
+                    <div class="menuprix taille100">
+                        <h4>Noix de coquilles Saint-Jacques</h4>
+                        <p>Sur lit de purée de céleri-rave</p>
+                    </div>
+                    
+                    <div class="prix">40€</div>
+
+                    <aside class="ok"><i class="fas fa-check-circle"></i></aside>
+
+                </article>
+
+                <article>
+
+                    <div class="menuprix taille100">
+                        <h4>Langoustine poêlée</h4>
+                        <p>Purée de patate douce</p>
+                    </div>
+                    
+                    <div class="prix">35€</div>
+
+                    <aside class="ok"><i class="fas fa-check-circle"></i></aside>
+
+                </article>
+
+                <article>
+
+                    <div class="menuprix taille100">
+                        <h4>Mijoté de queue de boeuf</h4>
+                        <p>Et riz sauvage aux zestes de citron</p>
+                    </div>
+                    
+                    <div class="prix">44€</div>
+
+                    <aside class="ok"><i class="fas fa-check-circle"></i></aside>
+
+                </article>
 
             </div>
 
-            <div>
-                
-                <p>Langoustine poêlée<scan>Purée de patate douce</scan></p>
-                <article>35€</article>
+            <div class="desserts">
 
-            </div>
-
-            <div>
-
-                <p>Mijoté de queue de boeuf <scan>Et riz sauvage aux zestes de citron</scan></p>
-                <article>44€</article>
-
-            <h2>Desserts</h2><!--Desserts-->
+                <h2 class="margeg20">DESSERTS</h2><!--Desserts-->
             
-            <div>
+                <article>
 
-                <p>Macaron noisette et chocolat<scan>Glace au caramel brun et sel de Guérande</scan></p>
-                <article>18€</article>
+                    <div class="menuprix taille100">
+                        <h4>Farandole de desserts</h4>
+                        <p>Du chef</p>
+                    </div>
+                    
+                    <div class="prix">18€</div>
+
+                    <aside class="ok"><i class="fas fa-check-circle"></i></aside>
+
+                </article>
+
+                <article>
+
+                    <div class="menuprix taille100">
+                        <h4>Macaron noisette et chocolat</h4>
+                        <p>Glace au caramel brun et sel de Guérande</p>
+                    </div>
+                    
+                    <div class="prix">22€</div>
+
+                    <aside class="ok"><i class="fas fa-check-circle"></i></aside>
+
+                </article>
+
+                <article>
+
+                    <div class="menuprix taille100">
+                        <h4>Tarte au citron meringuée</h4>
+                        <p>Déstructurée</p>
+                    </div>
+                    
+                    <div class="prix">23€</div>
+
+                    <aside class="ok"><i class="fas fa-check-circle"></i></aside>
+
+                </article>
 
             </div>
 
-            <div>
-                
-                <p>Baba au rhum revisité<scan>Avec son coulis de citron</scan></p>
-                <article>22€</article>
+            <div class="gris apbt">
+
+                <div class="bt"><p>Commander</p></div>
 
             </div>
-
-            <div>
-
-                <p>Tarte au citron meringuée<scan>Déstructurée</scan></p>
-                <article>23€</article>
-
-            </div>
-
-            <p>Commander</p> 
 
         </section>
 
         <footer>
 
-            <h3><img src="" alt="logo site"></h3>
+            <h3>ohmyfood</h3>
+           
+            <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
 
-            <p><img src="" alt="logo couverts">Proposer un restaurant</p>
-
-            <p><img src="" alt="logo mains serres">Devenir partenaire</p>
+            <p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
 
             <p>Mentions légales</p>
 
-            <p>Contact</p>
+            <a href="mailto:basileb1@hotmail.fr"><p>Contact</p></a>
             
         </footer>
 
