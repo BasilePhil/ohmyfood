@@ -45,6 +45,10 @@ body
 	font-weight: normal;
 }
 
+.taille95
+{
+	font-size: 1em;
+}
 /*fin des classes*/
 
 /*spéciation*/
@@ -54,12 +58,12 @@ h2, article h4
 	font-size: 1em;
 }
 
-section article p , footer p, div.prix
+section article p , footer p, div.prix 
 {
 	font-size: 0.95em;
 }
 
-section article h4, div.prix
+section article h4, div.prix, span
 {
 	font-weight: bold
 }
@@ -70,7 +74,7 @@ h1, footer h3, h2, section article p
 	font-weight: normal;
 }
 
-p ,article ,h2 ,h4
+p ,article ,h2 ,h4 ,figcaption
 {
 	font-family: 'Roboto', sans-serif;
 }
@@ -93,7 +97,31 @@ footer a, footer a:link, footer a:visited, footer a:focus, footer a:hover, foote
 
 /*fin spéciation*/
 
-/* début de la page */
+/* début de la page accueil */
+
+section.gris figure
+{
+	background: #fff;
+	width: 90%;
+	margin: auto;
+	border-radius: 15px;
+	overflow: hidden;
+	height: 200px;
+	padding-bottom: 100px;
+}
+
+section.gris figcaption aside
+{
+	margin-top: -20px;
+	margin-left: 250px;
+	z-index: 2;
+	display: block;
+}
+
+
+/* fin de la page  accueil */
+
+/* début de la page manu */
 
 header div
 {
