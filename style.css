@@ -25,9 +25,24 @@ body
 	color: rgb(169, 93, 220);
 }
 
+.cviolet
+{
+	color: #9356DC;
+}
+
 .rose
 {
 	color: rgb(227, 112, 218);
+}
+
+.crose
+{
+	color: #FF79DA;
+}
+
+.cvert
+{
+	color: #99E2D0;
 }
 
 .noir
@@ -234,16 +249,18 @@ section.clacc article:hover i,section.clacc article:active i
 	color: rgb(169, 93, 220);	
 }
 
+/* début des figures propres à la page d'accueil */
 
 section.gris figure
 {
 	background: #fff;
-	width: 90%;
+	width: 337px;
 	margin: auto;
+	margin-bottom: 20px;
 	border-radius: 15px;
 	overflow: hidden;
-	height: 200px;
-	padding-bottom: 100px;
+	height: 250px;
+	box-shadow: 2px 2px 7px 3px #E8E8E8;
 }
 
 section.gris figcaption 
@@ -256,17 +273,37 @@ section.gris figcaption
 	box-sizing: border-box;
 }
 
-section.gris figcaption aside
+body section.gris figcaption div.coeur
 {
-	margin-top: -20px;
-	margin-left: 250px;
-	z-index: 2;
-	display: block;
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
 }
 
+body section.gris figcaption div.coeur i
+{
+	font-size: 1.5em;
+}
 
+figcaption div.coeur i.coeurplein
+{
+	margin-left: -24px;
+}
+
+section.gris figure p
+{
+	position: absolute;
+	top: 0;
+	right: 20px;
+	background-color: #99E2D0;
+	color: rgb(48, 163, 135);
+	font-weight: bold;
+	padding: 5px 10px 5px 10px;
+	border-radius: 5px;
+}
+
+/* fin des figures de la page d'accueil */
 /* fin de la page  accueil */
-
 /* début de la page manu */
 
 header div
@@ -327,12 +364,12 @@ h1 span
 	margin: 0px 0px 0px 70px;
 }
 
-h1 span:hover ,h1 span:active ,figcaption aside:hover ,figcaption aside:active
+h1 span:hover ,h1 span:active ,figcaption div:hover ,figcaption div:active
 {
 	cursor: pointer;
 }
 
-h1 i.coeurvide ,aside i.coeurvide
+h1 i.coeurvide ,div i.coeurvide
 {
 	z-index: 2;
 	transform: scale(1);
@@ -340,12 +377,12 @@ h1 i.coeurvide ,aside i.coeurvide
 	transition-duration: 500ms;	
 }
 
-span:hover .coeurvide ,span:active .coeurvide ,figcaption aside:hover .coeurvide ,figcaption aside:active .coeurvide
+span:hover .coeurvide ,span:active .coeurvide ,figcaption div:hover .coeurvide ,figcaption div:active .coeurvide
 {
 	transform: scale(1.22);
 }
 
-h1 i.coeurplein ,aside i.coeurplein
+h1 i.coeurplein ,div i.coeurplein
 {
 	color: rgb(169, 93, 220);
 	margin-left: -25.609px;
@@ -356,7 +393,7 @@ h1 i.coeurplein ,aside i.coeurplein
 	z-index: 1;
 }
 
-span:hover .coeurplein ,span:active .coeurplein ,aside:hover .coeurplein ,aside:active .coeurplein
+span:hover .coeurplein ,span:active .coeurplein ,div:hover .coeurplein ,div:active .coeurplein
 {
 	transform: scale(1);
 }
