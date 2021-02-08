@@ -583,9 +583,10 @@ footer i
 
 @media (min-width: 1125px)
 {
-	div.entrees ,div.plat ,div.desserts
+	div.entrees ,div.plats ,div.desserts
 	{
-		width: 375px;
+		min-width: 375px;
+		width: 33%;
 	}
 
 	div.entrees
