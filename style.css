@@ -329,6 +329,7 @@ header div
 header div i
 {
 	font-size: 1.3em;
+	position: absolute;
 	margin: 7px 0px 0px 20px;
 	/*transform: background scaleX(1);*/
 }
@@ -343,7 +344,7 @@ header div i
 
 header div img
 {
-	padding-left: 50px;
+	margin: auto;
 }
 
 figure
@@ -568,6 +569,17 @@ footer i
 
 @media (min-width: 800px)
 {
+	header figure
+	{
+		text-align: center;
+		background: url(photos/itable3.jpg);
+	}
+
+	header figure img.taille100
+	{
+		width: 800px;
+	}
+
 	e.flex
 	{
 		display: flex;
@@ -594,3 +606,5 @@ footer i
 		padding-top: 10px;
 	}
 }
+
+/* fin des médias queries */
