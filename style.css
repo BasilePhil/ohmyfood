@@ -162,12 +162,101 @@ section article h4 ,section article p
 
 @keyframes animation1
 {
-	from{
-		
+	0%{
+		opacity: 0;	
 	}
-	to{
-		
+	100%{
+		opacity: 1;		
 	}
+}
+
+@keyframes animation2
+{
+	0%{
+		opacity: 1;
+		transform: rotate(0);
+	}
+	10%{
+		opacity: 0.8;
+	}
+	20%{
+		opacity: 1;
+	}
+	30%{
+		opacity: 0.8;
+	}
+	40%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0.8;
+	}
+	60%{
+		opacity: 0.6;
+	}
+	70%{
+		opacity: 0.8;
+	}
+	80%{
+		opacity: 0.1;			
+	}
+	90%{
+		opacity: 0.8;
+	}
+	100%{
+		opacity: 0;
+		transform: rotate(2turn)		
+	}
+}
+
+a[href="la_palette_du_gout.html"]:active ,a[href="la_note_enchantee.html"]:active ,a[href="a_la_francaise.html"]:active ,a[href="le_delice_des_sens.html"]:active
+{
+	color: #9356DC; 	
+}
+
+div.entrees
+{
+	animation: animation1;
+	animation-duration: 1000ms;
+	animation-fill-mode: backwards;	
+}
+
+div.plats
+{
+	animation: animation1;
+	animation-duration: 1000ms;
+	animation-delay: 300ms;
+	animation-fill-mode: backwards;	
+}
+
+div.desserts
+{
+	animation: animation1;
+	animation-duration: 1000ms;
+	animation-delay: 600ms;
+	animation-fill-mode: backwards;	
+}
+
+body x.animation
+{
+	display: block;
+	animation: animation1;
+	animation-duration: 2000ms;
+	animation-delay: 2000ms;
+	animation-fill-mode: backwards;
+}
+
+p.spinner
+{
+	position: fixed;
+	font-size: 6em;
+	margin-left: 45%;
+	background: linear-gradient(#9356DC, #FF79DA);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animation2;
+	animation-duration: 2500ms;
+	animation-fill-mode: forwards;
 }
 
 /* fin keyframe */
@@ -547,11 +636,6 @@ footer
 	background-color: rgb(53, 53, 53);
 	color: #fff;
 	padding: 10px 20px 20px 20px;
-}
-
-footer h3
-{
-
 }
 
 footer p
