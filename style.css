@@ -201,7 +201,7 @@ section article h4 ,section article p
 		opacity: 0.1;			
 	}
 	90%{
-		opacity: 0.8;
+		opacity: 0.6;
 	}
 	100%{
 		opacity: 0;
@@ -250,7 +250,7 @@ p.spinner
 {
 	position: fixed;
 	font-size: 6em;
-	margin-left: 45%;
+	margin-left: 38%;
 	background: linear-gradient(#9356DC, #FF79DA);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -547,10 +547,8 @@ section article p
 
 div.prix
 {
-	margin-right: 10px;
-	padding-left: 5px;
+	width: 40px;	
 	padding-top: 35px;
-	width: 40px;
 	transform: translate(40px);
 	transition-property: transform;
 	transition-duration: 500ms;
@@ -559,6 +557,8 @@ div.prix
 article:hover div.prix ,article:hover div.prix
 {
 	transform: translate(0px);
+	margin-right: 10px;
+	padding-left: 5px;		
 }
 
 aside
@@ -653,6 +653,11 @@ footer i
 
 @media (min-width: 800px)
 {
+	p.spinner
+	{
+		margin-left: 45%
+	}
+
 	header figure
 	{
 		text-align: center;
